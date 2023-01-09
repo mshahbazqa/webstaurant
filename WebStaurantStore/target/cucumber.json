@@ -1,0 +1,129 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-01-08T17:56:49.400Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3921169500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HomePageSteps.before()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Verify search functionality",
+        "description": "",
+        "id": "search-functionality;verify-search-functionality;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2314298900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HomePageSteps.after(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3525225900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I Launch Application with \"https://www.webstaurantstore.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.webstaurantstore.com/\"",
+                  "offset": 26
+                }
+              ],
+              "location": "HomePageSteps.iLaunchApplicationWith(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7468305200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Search for \"stainless work table\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"stainless work table\"",
+                  "offset": 11
+                }
+              ],
+              "location": "HomePageSteps.searchFor(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1167806700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Verify all search items contains \"Table\" keyword",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Table\"",
+                  "offset": 33
+                }
+              ],
+              "location": "HomePageSteps.verifyAllSearchItemsContainsKeyword(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6154992400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Add last element to cart",
+            "match": {
+              "location": "HomePageSteps.addLastElementToCart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4295680100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Empty cart",
+            "match": {
+              "location": "OrderConfirmationPageSteps.emptyCart()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test"
+          }
+        ]
+      }
+    ],
+    "name": "Search Functionality",
+    "description": "",
+    "id": "search-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/SearchItems.feature",
+    "tags": []
+  }
+]
